@@ -17,19 +17,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
 
-.hidden{
-    display: none;
-}
-.flex{
-    display: flex;
-}
-.block_resume_info{
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    width: 100%;
-    background: url('../img/astronaut.jpg') 90% 0/cover no-repeat fixed;
+.wrapper{
+    background: #13131d;
+    padding: 50px 0;
     font-family: roboto;
 }
 .block_star{
@@ -231,15 +221,152 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
         opacity: 0.1;
     }
 }
-.block_planet{
-    position: fixed;
-    z-index: 0;
-    right: 30px;
-    bottom: 470px;
-    width: 200px;
-    height: 200px;
-    background: url('../img/planet.gif')0 0/ 200px 200px no-repeat;
-    animation-duration: 25s;
+.star10{
+    bottom: 520px;
+    left: 62px;
+    height: 15px;
+    width: 15px;
+    background: url('../img/star.png')0 0/ 15px 15px no-repeat;
+    animation: star10;
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+@keyframes star10 {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star11{
+    bottom: 120px;
+    left: 187px;
+    height: 25px;
+    width: 25px;
+    background: url('../img/star.png')0 0/ 25px 25px no-repeat;
+    animation: star11;
+    opacity: 0;
+    animation-delay: 12s;
+    animation-duration: 22s;
+    animation-iteration-count: infinite;
+}
+@keyframes star11 {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star12{
+    bottom: 197px;
+    left: 54px;
+    height: 15px;
+    width: 15px;
+    background: url('../img/star.png')0 0/ 15px 15px no-repeat;
+    animation: star12;
+    opacity: 0;
+    animation-delay: 3s;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+@keyframes star12 {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star13{
+    top: 453px;
+    left: 213px;
+    height: 17px;
+    width: 17px;
+    background: url('../img/star.png')0 0/ 17px 17px no-repeat;
+    animation: star13;
+    opacity: 0;
+    animation-delay: 10s;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+}
+@keyframes star13 {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star14{
+    top: 500px;
+    left: 305px;
+    height: 21px;
+    width: 21px;
+    background: url('../img/star.png')0 0/ 21px 21px no-repeat;
+}
+.star15{
+    top: 130px;
+    right: 370px;
+    height: 16px;
+    width: 16px;
+    background: url('../img/star.png')0 0/ 16px 16px no-repeat;
+}
+.star16{
+    bottom: 184px;
+    left: 384px;
+    height: 19px;
+    width: 19px;
+    background: url('../img/star.png')0 0/ 19px 19px no-repeat;
+}
+.block_projects{
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.block_projects_name{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 40px;
 }
 .block_resume_info_contant{
     position: relative;
@@ -247,7 +374,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     max-width: 700px;
     margin: 0 auto;
     font-size: 22px;
-    margin-top: 20px;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: -8px 8px 20px 0 rgba(0,0,0,0.5);
@@ -258,25 +384,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     color: black;
     font-size: 30px;
 }
-.block_my-name__text{
-    text-align: center;
-}
-.block_name-profession_text{
-    margin: 20px;
-}
-.block_profession__text{
-    font-size: 24px;
-    text-align: center;
-    font-weight: 600;
-    margin-top: 30px;
-}
-.block_resume_info_contant_icon{
-    margin: 40px 30px;
-}
 
-.block_resume_info_project{
-    margin-top: 50px;
-}
 .block_resume_info_project__tittle{
     text-align: center;
     margin-top: 40px;
@@ -302,16 +410,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     width: 100%;
 }
 .block_slider_projects__item_photo-1{
-    background: url('../img/imageProject/Electric-Home.png') 0 0/100% auto no-repeat;
+    background: url('../img/imageProject/imageMiniProject/Gradient-Generator.png') 0 0/100% auto no-repeat;
 }
 .block_slider_projects__item_photo-2{
-    background: url('../img/imageProject/King-Cinema.png') 0 0/100% auto no-repeat;
+    background: url('../img/imageProject/imageMiniProject/Clock.png') 0 0/100% auto no-repeat;
 }
 .block_slider_projects__item_photo-3{
-    background: url('../img/imageProject/V.E.png') 0 0/100% auto no-repeat;
+    background: url('../img/imageProject/imageMiniProject/LightHouse-Animation.png') 0 0/100% auto no-repeat;
 }
 .block_slider_projects__item_photo-4{
-    background: url('../img/imageProject/MyProjects.png') 0 center/100% auto no-repeat;
+    background: url('../img/imageProject/imageMiniProject/Settings-Design.png') 0 center/100% auto no-repeat;
+}
+.block_slider_projects__item_photo-5{
+    background: url('../img/imageProject/imageMiniProject/Carousel.png') 0 center/100% auto no-repeat;
 }
 .block_slider_projects__item_info{
     margin: 20px 20px;
@@ -325,105 +436,4 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     margin-top: 15px;
     font-weight: 400;
     color: rgb(41, 41, 41);
-}
-
-
-.block_resume_contacts{
-    margin: 50px auto;
-    padding: 50px 50px 50px 50px;
-    color: rgb(1, 1, 1);
-}
-.block_resume_contacts__title{
-    text-align: center;
-}
-.block_resume_contacts__connection_subtittle{
-    margin-top: 50px;
-    flex: 0 1 50%;
-}
-.block_resume_contacts__connection_name{
-    font-size: 20px;
-    font-weight: 600;
-}
-.block_resume_contacts__connection_props{
-    font-size: 20px;
-    margin-top: 10px;
-    color: rgb(41, 41, 41);
-}
-
-
-@media (max-width: 850px){
-	.welcome_meme_image{
-        background: url('../img/YayaVertical.png') 0 0/contain no-repeat;
-        height: 500px;
-        width: 35%;
-        position: absolute;
-        right: 0;
-        left: 100%;
-        bottom: -88%;
-        transition: all 1s ease;
-    }
-    .welcome_meme_image:hover{
-        bottom: -40%;
-        left: 100%;
-        right: 0;
-        transition: all 9s ease;
-    }
-    .welcome_meme_text{
-        font-family: verdana;
-        font-size: 23px;
-        margin: 0;
-    }
-    .welcome_meme_scratch{
-        position: relative;
-        right: 80px;
-    }
-    .welcome_meme_thrust{
-        position: relative;
-        top: 200px;
-        right: 200px;
-        font-size: 23px;
-        margin: 0;
-        color: rgb(0, 0, 0);
-        height: 200px;
-        transform: rotate(-90deg);
-    }
-    .welcome_meme_thrust_link a{
-        margin: 0 100px;
-        padding: 30px 80px 30px 0;
-        position: relative;
-        top: 20px;
-        left: 10px;
-    }
-}
-@media (max-width: 740px){
-    .block_resume_info_contant{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-@media (max-width: 565px){
-    .welcome_meme_image{
-        height: 700px;
-        width: 300px;
-        bottom: -122%;
-    }
-    .welcome_meme_image:hover{
-        bottom: -80%;
-    }
-    .welcome_meme_thrust{
-        top: 325px;
-        right: 200px;
-    }
-    .welcome_meme_thrust_link a{
-        top: 40px;
-        left: 10px;
-    }
-    .block_slider_projects{
-        margin: 0 20px;
-    }
-}
-@media (max-width: 420px){
-    .block_slider_projects__item_photo {
-        height: 200px;
-    }
 }
