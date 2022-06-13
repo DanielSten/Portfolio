@@ -337,8 +337,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     text-align: center;
 }
 .block_resume_contacts__connection_subtittle{
-    margin-top: 50px;
+    margin: 50px 5px 0;
     flex: 0 1 50%;
+
 }
 .block_resume_contacts__connection_name{
     font-size: 20px;
@@ -351,50 +352,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 
-@media (max-width: 850px){
-	.welcome_meme_image{
-        background: url('../img/YayaVertical.png') 0 0/contain no-repeat;
-        height: 500px;
-        width: 35%;
-        position: absolute;
-        right: 0;
-        left: 100%;
-        bottom: -88%;
-        transition: all 1s ease;
-    }
-    .welcome_meme_image:hover{
-        bottom: -40%;
-        left: 100%;
-        right: 0;
-        transition: all 9s ease;
-    }
-    .welcome_meme_text{
-        font-family: verdana;
-        font-size: 23px;
-        margin: 0;
-    }
-    .welcome_meme_scratch{
-        position: relative;
-        right: 80px;
-    }
-    .welcome_meme_thrust{
-        position: relative;
-        top: 200px;
-        right: 200px;
-        font-size: 23px;
-        margin: 0;
-        color: rgb(0, 0, 0);
-        height: 200px;
-        transform: rotate(-90deg);
-    }
-    .welcome_meme_thrust_link a{
-        margin: 0 100px;
-        padding: 30px 80px 30px 0;
-        position: relative;
-        top: 20px;
-        left: 10px;
-    }
-}
+
 @media (max-width: 740px){
     .block_resume_info_contant{
         margin-left: 20px;
@@ -402,22 +360,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 }
 @media (max-width: 565px){
-    .welcome_meme_image{
-        height: 700px;
-        width: 300px;
-        bottom: -122%;
-    }
-    .welcome_meme_image:hover{
-        bottom: -80%;
-    }
-    .welcome_meme_thrust{
-        top: 325px;
-        right: 200px;
-    }
-    .welcome_meme_thrust_link a{
-        top: 40px;
-        left: 10px;
-    }
     .block_slider_projects{
         margin: 0 20px;
     }
@@ -425,5 +367,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @media (max-width: 420px){
     .block_slider_projects__item_photo {
         height: 200px;
+    }
+    .block_resume_contacts__connection_name{
+        font-size: 17px;
+    }
+    .block_resume_contacts__connection_props{
+        font-size: 15px;
+    }
+    .block_resume_contacts{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

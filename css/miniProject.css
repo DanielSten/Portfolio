@@ -437,3 +437,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     font-weight: 400;
     color: rgb(41, 41, 41);
 }
+
+@media (max-width: 740px){
+    .block_resume_info_contant{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 565px){
+    .block_slider_projects{
+        margin: 0 20px;
+    }
+}
+@media (max-width: 420px){
+    .block_slider_projects__item_photo {
+        height: 200px;
+    }
+}
