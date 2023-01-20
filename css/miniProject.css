@@ -409,19 +409,22 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     height: 100%;
     width: 100%;
 }
-.block_slider_projects__item_photo-1{
+.block_slider_projects__item_photo-6{
+    background: url('../img/imageProject/imageMiniProject/Mafia.png') 0 0/100% auto no-repeat;
+}
+.block_slider_projects__item_photo-5{
     background: url('../img/imageProject/imageMiniProject/Gradient-Generator.png') 0 0/100% auto no-repeat;
 }
-.block_slider_projects__item_photo-2{
+.block_slider_projects__item_photo-4{
     background: url('../img/imageProject/imageMiniProject/Clock.png') 0 0/100% auto no-repeat;
 }
 .block_slider_projects__item_photo-3{
     background: url('../img/imageProject/imageMiniProject/LightHouse-Animation.png') 0 0/100% auto no-repeat;
 }
-.block_slider_projects__item_photo-4{
+.block_slider_projects__item_photo-2{
     background: url('../img/imageProject/imageMiniProject/Settings-Design.png') 0 center/100% auto no-repeat;
 }
-.block_slider_projects__item_photo-5{
+.block_slider_projects__item_photo-1{
     background: url('../img/imageProject/imageMiniProject/Carousel.png') 0 center/100% auto no-repeat;
 }
 .block_slider_projects__item_info{
